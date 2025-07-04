@@ -67,9 +67,12 @@ export const getSession = async () => {
 
 /**
  * Send password reset email to user.
+ * Includes redirect URL after user clicks the reset link.
  */
 export const resetPassword = async (email: string) => {
-  const { error } = await supabase.auth.resetPasswordForEmail(email);
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: 'https://bartermate-app.netlify.app/bartermate-legal/reset-success.html', // Correct URL for your Netlify page
+  });
   if (error) throw error;
 };
 
