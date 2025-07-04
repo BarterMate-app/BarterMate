@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function MessageBubble({ message, isOwn }: { message: string; isOwn: boolean }) {
   return (
     <View style={[styles.bubble, isOwn ? styles.own : styles.their]}>
-      <Text style={styles.text}>{message}</Text>
-    </View>
+      <AppText style={styles.text}>{message}</AppText>
+    </ScreenWrapper>
   );
 }
 
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   own: {
     alignSelf: 'flex-end',
-    backgroundColor: '#acf',
+    backgroundColor: colors.primary,
   },
   their: {
     alignSelf: 'flex-start',

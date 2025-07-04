@@ -1,0 +1,25 @@
+🔍 Files/Modules Involved when NewListingScreen Loads:
+1️⃣ NewListingScreen.tsx
+Directly imports ScreenWrapper
+
+Directly imports:
+
+AppButton
+
+AppText
+
+AppTextInput
+
+CategoryPicker
+
+MapModal
+
+useUser (utils)
+
+supabase (services)
+
+createListing (services)
+
+localStorage (utils)
+
+If any of these internally try to access a nonexistent ScreenWrapper property/instance or import it wrong — crash.

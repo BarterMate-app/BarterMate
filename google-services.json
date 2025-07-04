@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "925116121389",
+    "project_id": "bartermate-da77f",
+    "storage_bucket": "bartermate-da77f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925116121389:android:1b8d2ab07ed07eb6b513a4",
+        "android_client_info": {
+          "package_name": "com.bartermate.bartermate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM2D2dHGay5kDPxpxkyLbj46GWImrrMMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,25 +5,40 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "scheme": "bartermate",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#007AFF"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-notifications",
+      "react-native-maps"
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#007AFF"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.bartermate.bartermate",
+      "permissions": [
+        "NOTIFICATIONS",
+        "ACCESS_FINE_LOCATION",
+        "INTERNET",
+        "ACCESS_COARSE_LOCATION",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2326c881-2fe9-4aa2-978f-57c221631c02"
+      }
     }
   }
 }
